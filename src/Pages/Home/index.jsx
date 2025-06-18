@@ -41,8 +41,12 @@ function Home() {
       confirmButtonText: 'Fechar',
       draggable: true,
     });
-    navigate("/lista-de-usuarios")
-    
+
+
+    setTimeout(() => {
+      navigate("/lista-de-usuarios")
+    }, 3000);
+
     // Limpar campos ou redirecionar, se quiser
   } catch (error) {
     Swal.fire({
