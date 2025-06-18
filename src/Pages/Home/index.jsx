@@ -41,7 +41,7 @@ function Home() {
       confirmButtonText: 'Fechar',
       draggable: true,
     });
-    //navigate("/lista-de-usuarios")
+    navigate("/lista-de-usuarios")
     
     // Limpar campos ou redirecionar, se quiser
   } catch (error) {
