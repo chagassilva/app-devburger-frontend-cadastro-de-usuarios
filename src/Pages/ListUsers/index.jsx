@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import Swal from "sweetalert2";
 //import { useId } from 'react';
-import { ButtonRegister } from "../../Components/Button/styles.js";
+import { ButtonRegister } from "../../components/Button/styles.js";
 
 import { TopBackgound } from "../../components/TopBackground/styles.js";
 import {
