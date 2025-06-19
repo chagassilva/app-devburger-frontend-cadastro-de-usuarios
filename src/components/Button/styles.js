@@ -15,9 +15,10 @@ height: 60px;
 border-radius: 16px;
 cursor: pointer;
 
+
 &:hover{
     
-    ${(props) => props.theme === "primary" ? "opacity: 0.8" : "background:#fff; color:#fe7e5d"}
+    ${(props) => props.theme === "primary" ? "opacity: 0.7" : "background:#fff; color:#fe7e5d"}
 }
 
 &:active{

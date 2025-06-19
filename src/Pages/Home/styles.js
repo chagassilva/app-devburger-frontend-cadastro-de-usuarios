@@ -10,6 +10,8 @@ export const Topcontainer = styled.div`
     justify-content:space-evenly;
     padding: 20px;
     height:100vh;
+
+    .ifXfZj{background-color:white;}
     
 `
 
@@ -45,7 +47,7 @@ flex-direction: column;
 align-items: center;
 gap: 20px;
 max-width: 500px;
-    
+
 
 `
 
@@ -94,6 +96,16 @@ span{
     
     
 }
+
+`
+export const ContainerForm = styled.div`
+
+background: linear-gradient(to right, #fe7e5d, #7f3841);
+padding:20px 20px;
+border-radius:15px;
+box-shadow: 10px 15px 5px -6px rgba(127, 56, 65, 0.53);
+  -webkit-box-shadow: 10px 15px 5px -6px rgba(127, 56, 65, 0.53);
+  -moz-box-shadow: 10px 15px 5px -6px rgba(127, 56, 65, 0.53);
 
 `
 // export const ButtonRegister = styled.button`

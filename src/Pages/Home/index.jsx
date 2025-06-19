@@ -13,6 +13,7 @@ import {
   InputUser,
   LabelUser,
   ContainerInputs,
+  ContainerForm,
 } from "./styles.js";
 
 function Home() {
@@ -68,6 +69,7 @@ function Home() {
         <img src={UserImage} alt="imagnes de usuarios" />
       </TopBackgound>
 
+<ContainerForm>
       <FormUser>
         <Title>Cadastrar Usuários</Title>
 
@@ -118,13 +120,14 @@ function Home() {
         </div>
 
 
-        <ButtonRegister type="button" theme="primary"onClick={registerNewUser} 
+        <ButtonRegister type="button" theme="secondary" onClick={registerNewUser} 
 
         >
           Cadastrar usuário
         </ButtonRegister>
         
       </FormUser>
+      </ContainerForm>
 
       <ButtonRegister
         type="button"
