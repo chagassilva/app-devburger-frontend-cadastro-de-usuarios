@@ -4,6 +4,7 @@ import api from "../../services/api.js";
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
+import Lottie from 'lottie-react';
 
 import {
   TopBackgound,
@@ -65,6 +66,8 @@ function Home() {
 
   return (
     <Topcontainer>
+
+    
       <TopBackgound>
         <img src={UserImage} alt="imagnes de usuarios" />
       </TopBackgound>
