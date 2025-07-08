@@ -1,4 +1,4 @@
-# DevBurger 🍔
+# DevUser 🧑‍💻
 
 [![Version](https://img.shields.io/badge/version-1.0.0-blue)](https://github.com/seu-usuario/DevBurger/releases/tag/v1.0.0)
 [![Build Status](https://img.shields.io/github/actions/workflow/status/seu-usuario/DevBurger/ci.yml?branch=main)](https://github.com/seu-usuario/DevBurger/actions)
@@ -6,11 +6,23 @@
 
 ---
 
-## Sobre
+🧑‍💻 Sobre o DevUser
+DevUser é uma aplicação web simples e intuitiva desenvolvida com foco no cadastro e gerenciamento de usuários. Criada com o objetivo de praticar e demonstrar habilidades em desenvolvimento full stack, a aplicação simula um sistema básico de CRUD (Create, Read, Update, Delete) — essencial para diversos tipos de sistemas reais.
 
-DevBurger é um site moderno focado em hamburgueria, construído com React e Vite para oferecer uma experiência rápida e agradável para os amantes de hambúrguer.
+Essa aplicação foi desenvolvida com tecnologias modernas e boas práticas, sendo ideal tanto para fins de estudo quanto como base para projetos maiores.
 
 ---
+
+⚙️ Funcionalidades
+Cadastro de novos usuários
+
+Visualização da lista de usuários cadastrados
+
+Edição de informações de usuários
+
+Exclusão de registros
+
+Feedback visual com alertas e confirmações
 
 ## Tecnologias
 
@@ -21,9 +33,13 @@ DevBurger é um site moderno focado em hamburgueria, construído com React e Vit
 
 ---
 
+📌 Objetivo
+O DevUser foi criado com foco em praticar conceitos fundamentais de aplicações web, como integração entre frontend e backend, manipulação de banco de dados e experiência do usuário com alertas interativos. Simples, direto e funcional.
+
 ## Imagens
 
-![Tela inicial do DevBurger](./src/assets/login_devclub.png)
+![Tela inicial do DevUsers](./src/assets/img_home.png)
+![Tela inicial do DevUsers](./src/assets/img_users.png)
 
 ---
 
