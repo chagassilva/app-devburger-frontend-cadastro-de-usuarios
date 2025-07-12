@@ -22,7 +22,6 @@ import {
   BannerAvatarUsers,
   AvatarItems,
   UserEdit,
-  LoaderUsers,
 } from "./style";
 
 import Trash from "../../../src/assets/lixeira-xmark.png";
@@ -31,7 +30,6 @@ import {
   BannerEditAvatarUsers,
   Btncanceledituser,
   Btnsaveedituser,
-  ContainerUserEdit,
   InputEditUsers,
   ModalStyled,
   ModalStyledalStyle,
@@ -43,36 +41,15 @@ function ListUsers() {
 
   const [isEditing, setIsEditing] = useState(false);
   const [editingUser, setEditingUser] = useState(null);
-  const [loading, setLoading] = useState(true);
 
-
-   useEffect(() => {
+  useEffect(() => {
     async function getUsers() {
-      try {
-        setLoading(true);
-        const { data } = await api.get("/users");
-        SetUsers(data);
-      } catch (error) {
-        console.error("Erro ao buscar usuários:", error);
-      } finally {
-        setLoading(false);
-      }
+      const { data } = await api.get("/users");
+      SetUsers(data);
     }
 
     getUsers();
   }, []);
-
-  
-if (loading) {
-  return (
-    <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-      <LoaderUsers />
-      <p style={{ marginTop: "10px" }}>Buscando usuários...</p>
-    </div>
-  );
-}
-
-
 
   async function deleteUser(id) {
     await api.delete(`/create-users/${id}`);
@@ -123,9 +100,9 @@ if (loading) {
         <ModalStyledalStyle>
           <ModalStyled>
             <h3>Editar Usuário</h3>
-              <BannerEditAvatarUsers key={editingUser.id}>
+              <BannerEditAvatarUsers key={isEditing.id}>
                 <img
-                  src={`https://api.dicebear.com/9.x/micah/svg?seed=Felix=${editingUser.id}`}
+                  src={`https://api.dicebear.com/9.x/micah/svg?seed=Felix=${isEditing.id}`}
                 />             
               </BannerEditAvatarUsers>
 
@@ -235,9 +212,7 @@ if (loading) {
                 }}
               />
 
-<ContainerUserEdit>
               <UserEdit src={Edit} onClick={() => openEditModal(user)} />
-</ContainerUserEdit>
             </CardUsersChild>
           ))}
         </ContainerUsers>

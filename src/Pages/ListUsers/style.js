@@ -32,7 +32,6 @@ export const ContainerUsers = styled.div`
   @media (min-width: 768px) and (max-width: 1023px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
   }
 `;
 
@@ -83,6 +82,8 @@ export const UserIconTrash = styled.img`
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 25px;
+  height: 25px;
 
   &:hover {
     opacity: 0.8;
@@ -92,6 +93,25 @@ export const UserIconTrash = styled.img`
     opacity: 0.5;
   }
 `;
+
+export const UserEdit = styled.img`
+  cursor: pointer;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+`;
+
 export const UserItem = styled.div`
   h5 {
     font-size: 20px;
@@ -138,3 +158,19 @@ export const AvatarItems = styled.div`
   border-radius: 5px;
   text-align: center;
 `;
+
+export const LoaderUsers = styled.div`
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #00bfff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+  margin: 100px auto;
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+`;
+

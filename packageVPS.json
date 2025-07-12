@@ -13,7 +13,6 @@
   "dependencies": {
     "@dicebear/collection": "^9.2.2",
     "@dicebear/core": "^9.2.2",
-    "@phosphor-icons/react": "^2.1.10",
     "axios": "^1.10.0",
     "cors": "^2.8.5",
     "lottie-react": "^2.4.1",
