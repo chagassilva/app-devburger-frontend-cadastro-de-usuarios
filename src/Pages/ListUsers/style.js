@@ -9,6 +9,34 @@ export const Topcontainer = styled.div`
   justify-content: center;
   justify-content: space-evenly;
   padding: 20px;
+
+  @media (min-width: 480px) and (max-width: 767px) {
+    /* Estilos específicos para telas muito pequenas */
+
+    gap: 20px;
+    height: auto;
+    width:100%;
+  }
+
+  @media (min-width: 768px) and (max-width: 1000px) {
+    /* Estilos específicos para telas muito pequenas */
+
+    height: 100vh;
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    /* Estilos específicos para telas muito pequenas */
+
+    height: 100%;
+  }
+
+  @media (min-width: 1024px) and (max-width: 1279px) {
+    /* Estilos para notebooks e desktops comuns */
+
+    gap: 20px;
+    min-height: 100vh;
+    
+  }
 `;
 
 export const Title = styled.h1`
@@ -29,10 +57,38 @@ export const ContainerUsers = styled.div`
   width: auto;
   margin: 20px 0;
 
-  @media (min-width: 768px) and (max-width: 1023px) {
+
+  @media (min-width: 480px) and (max-width: 767px) {
+    /* Estilos específicos para telas muito pequenas */
+
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width:450px;
+  }
+
+   @media (min-width: 768px) and (max-width: 1023px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+   @media (min-width: 1024px) and (max-width: 1279px) {
+    /* Estilos para notebooks e desktops comuns */
+
+    gap: 20px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (min-width: 1280px) and (max-width:1440px) {
+    /* Estilos para notebooks e desktops comuns */
+
+    gap: 20px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
 `;
 
 export const ContainerFilter = styled.div``;
@@ -126,6 +182,12 @@ export const HrUsers = styled.div`
   hr {
     border: 1px solid #7f3841;
     width: 550px;
+
+    @media (min-width: 480px) and (max-width: 767px) {
+    /* Estilos para celulares grandes e tablets menores */
+    width:400px;
+  }
+
   }
 `;
 
@@ -139,24 +201,51 @@ export const BannerGround = styled.div`
   align-items: center;
   max-width: 800px;
   margin: 30px;
+
+  @media (min-width: 480px) and (max-width: 767px) {
+    /* Estilos para celulares grandes e tablets menores */
+   
+  width:100%;
+  }
 `;
 
 export const BannerUsers = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 15px;
+
 `;
 
 export const BannerAvatarUsers = styled.div`
   width: 130px;
   height: auto;
   text-align: center;
+
+  @media (min-width: 480px) and (max-width: 767px) {
+    /* Estilos para celulares grandes e tablets menores */
+    display: grid;
+    grid-template-columns: 1fr ;
+   justify-self:center;
+   align-self:center;
+   margin:0  auto;
+  }
 `;
 
 export const AvatarItems = styled.div`
   background-color: white;
   border-radius: 5px;
   text-align: center;
+
+   @media (min-width: 480px) and (max-width: 767px) {
+    /* Estilos para celulares grandes e tablets menores */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color:transparent;
+    justify-content:center;
+    align-items:center;
+    color:white;
+  }
+  
 `;
 
 export const LoaderUsers = styled.div`
@@ -169,8 +258,11 @@ export const LoaderUsers = styled.div`
   margin: 100px auto;
 
   @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
 `;
-

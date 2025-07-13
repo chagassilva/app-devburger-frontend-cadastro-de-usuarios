@@ -26,6 +26,11 @@ cursor: pointer;
     ${(props) => props.theme === "primary" ? "opacity:0.5" : "background:#c0c0c0; color:#000000"}
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Estilos para tablets e notebooks menores */
+  margin:15px;
+}
+
 `
 
 export const ContainerFilter = styled.div`

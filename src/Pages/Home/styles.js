@@ -12,6 +12,32 @@ export const Topcontainer = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; */
+
+  @media (min-width: 480px) and (max-width: 767px) {
+    /* Estilos específicos para telas muito pequenas */
+
+    gap: 20px;
+    height: auto;
+  }
+
+  @media (min-width: 768px) and (max-width: 1000px) {
+    /* Estilos específicos para telas muito pequenas */
+
+    height: 100vh;
+  }
+
+  @media (min-width: 769px) and (max-width: 1023px) {
+    /* Estilos específicos para telas muito pequenas */
+
+    height: auto;
+  }
+
+  @media (min-width: 1024px) and (max-width: 1279px) {
+    /* Estilos para notebooks e desktops comuns */
+
+    gap: 20px;
+    height: 100vh;
+  }
 `;
 
 export const TopBackgound = styled.div`
@@ -28,6 +54,43 @@ export const TopBackgound = styled.div`
     max-width: 80%;
     max-height: 80%;
   }
+
+  @media (min-width: 480px) and (max-width: 767px) {
+    /* Estilos específicos para telas muito pequenas */
+
+    gap: 20px;
+    height: auto;
+    max-width: 542px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    /* Estilos específicos para telas muito pequenas */
+
+    height: auto;
+    width: 542px;
+    margin: 8px;
+  }
+
+  @media (min-width: 1024px) and (max-width: 1279px) {
+    /* Estilos para notebooks e desktops comuns */
+
+    gap: 20px;
+    height: auto;
+    max-width: 542px;
+  }
+
+  @media (min-width: 1280px) and (max-width: 1439px) {
+    gap: 20px;
+    height: auto;
+    max-width: 542px;
+  }
+
+  @media (min-width: 1080) and (max-width: 1920px) {
+  /* Estilos para telas grandes */
+   margin:0;
+}
+
+
 `;
 
 export const FormUser = styled.form`
@@ -78,48 +141,30 @@ export const ContainerForm = styled.div`
   -webkit-box-shadow: 10px 15px 5px -6px rgba(127, 56, 65, 0.53);
   -moz-box-shadow: 10px 15px 5px -6px rgba(127, 56, 65, 0.53);
 `;
-// export const ButtonRegister = styled.button`
 
-// border: ${(props) => props.theme === "primary" ? "none" : "solid 1px #fff"};
-// background: ${(props) => props.theme === "primary" ? "linear-gradient(180deg, #fe7e5d 0%, #ff6378 100%)" : "transparent"} ;
-// font-size: 16px;
-// color: white;
-// padding: 16px 32px;
-// width:fit-content;
-// height: 60px;
-// border-radius: 16px;
-// cursor: pointer;
+// Responsividade
 
-// &:hover{
-
-//     ${(props) => props.theme === "primary" ? "opacity: 0.8" : "background:#fff; color:#fe7e5d"}
+// /* Smartphones médios e tablets em modo retrato */
+// @media (min-width: 481px) and (max-width: 767px) {
+//   /* Estilos para celulares grandes e tablets menores */
 // }
 
-// &:active{
-
-//     ${(props) => props.theme === "primary" ? "opacity:0.5" : "background:#c0c0c0; color:#000000"}
+// /* Tablets e dispositivos médios (ex: iPad) */
+// @media (min-width: 768px) and (max-width: 1023px) {
+//   /* Estilos para tablets e notebooks menores */
 // }
 
-// `
-
-// export const Button = styled.button`
-
-// border:none;
-// background: linear-gradient(180deg, #fe7e5d 0%, #ff6378 100%);
-// font-size: 16px;
-// color: white;
-// padding: 16px 32px;
-// width:fit-content;
-// height: 60px;
-// border-radius: 16px;
-// cursor: pointer;
-
-// &:hover{
-//     opacity: 0.8;
+// /* Laptops e desktops padrão */
+// @media (min-width: 1024px) and (max-width: 1279px) {
+//   /* Estilos para notebooks e desktops comuns */
 // }
 
-// &:active{
-//     opacity: 0.6;
+// /* Desktops grandes */
+// @media (min-width: 1280px) and (max-width: 1439px) {
+//   /* Monitores maiores */
 // }
 
-// `
+// /* Telas muito grandes (ultrawide, 4K, etc) */
+// @media (min-width: 1440px) {
+//   /* Estilos para telas grandes */
+// }

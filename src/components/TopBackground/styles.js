@@ -17,7 +17,11 @@ export const TopBackgound = styled.div`
     max-height: 80%;
   }
 
-
+  @media (min-width: 480px) and (max-width: 767px) {
+    /* Estilos para celulares grandes e tablets menores */
+   
+   width:auto;
+  }
 
 `
 
